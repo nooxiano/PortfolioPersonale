@@ -1,5 +1,4 @@
 * {
-  background-color: rgb(12, 12, 12);
   color: rgba(255, 255, 255, 87);
 }
 
@@ -10,8 +9,9 @@
 }
 
 body {
+  background-color: rgb(12, 12, 12);
   margin: 0;
-  background-color: rgba(0, 0, 0, 0);
+/*  background-color: rgba(0, 0, 0, 0); */
   width: 100vw;
   height: 100vh;
 }
@@ -21,7 +21,7 @@ body {
   --bar-height: 2px;
   --hamburger-gap: 8px;
   --foreground: white;
-  --background: blue
+  --background: rgb(12,12,12)
     /*rgb(12,12,12)*/
   ;
   --hamburger-margin: 8px;
@@ -110,7 +110,8 @@ body {
 
 @font-face {
   font-family: "Akira Expanded";
-  src: url("./fonts/Akira_Expanded.otf");
+  src: url("./fonts/Akira_Expanded.otf") format('otf');
+  src: url("./fonts/Akira_Expanded.woff2") format('woff2');
 }
 
 #nome {
@@ -171,4 +172,81 @@ body {
 
 a {
   text-decoration: none;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+/*  align-items: center; */
+  background-color: #262626;
+  height: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_name{
+  font-family: 'Akira Expanded';
+
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.footer_text{
+  font-family: 'Open Sans';
+  font-size: 16px;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 12px;
+}
+/*
+.instagram{
+  display: flex;
+  padding-bottom: 6px;
+  flex-direction: row;
+}
+.behance{
+  display: flex;
+  padding-top: 6px;
+  flex-direction: row;
+}
+*/
+.socials{
+  display: flex;
+  flex-direction: column;
+
+}
+.socials div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.copyright{
+  font-family: 'Open Sans';
+  font-size: 10px;
+  color: rgb(126,126,126);
+  margin-top: 20px;
+
+}
+.footer_pages p{
+  margin-bottom: 12px;
+}
+.colonna2 .footer_text{
+  padding: 0;
+}
+.page{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.page_title{
+  font-family: 'Akira Expanded';
+  font-size: 26px;
+}
+.page img{
+  border-radius: 10px;
+  width: 90vw;
+  height: 200px;
+  object-fit: cover;
 }
