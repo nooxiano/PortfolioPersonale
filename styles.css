@@ -11,8 +11,6 @@
   body {
     background-color: #121212;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
   }
 
   :root {
@@ -222,7 +220,6 @@
   }
 
   .page {
-    min-height: 85vh;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
@@ -464,7 +461,6 @@
       display: grid;
       gap: 5%;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .header_home {
@@ -516,7 +512,6 @@
     .lavori{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
     }
   }
   @media screen and (max-width:768px) {
